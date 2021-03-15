@@ -156,7 +156,7 @@ sub CreateUserPoolHelper{
 
 }
 sub CreatePoolSection{
-    my $d = false;  #if true, a donation-config will be created
+    my $d = shift;  #if true, a donation-config will be created
     
     my %poolExtra=
     (
