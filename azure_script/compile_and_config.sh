@@ -8,7 +8,7 @@ cd xmrig
 git checkout v5.5.3
 mkdir build
 cd build
-cmake ..
+cmake .. 
 make 
 cd ..
 cd ..
