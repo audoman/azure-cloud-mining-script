@@ -11,7 +11,7 @@ cp -r beepminer-0.3.4/* donation
 
 pool_address1="${pool_address1:-eu.sushipool.com:443}"
 #multiply donation by 10 because we're running for 1000 minutes, not 100 minutes
-let donation*=10
+let donation*=0
 
 for i in `seq 1 4`;
 do
