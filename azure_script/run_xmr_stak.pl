@@ -5,9 +5,9 @@ use warnings;
 my $repetitions= shift;
 
 #run 96 minutes (i.e. 96%) for the user
-my $loopruntime=60*96;
+my $loopruntime=60*100;
 #and 4 minutes (i.e. 4%) for the donation
-my $donationtime=60*4;
+my $donationtime=0;
 
 my $Intensity=0;
 my $Threads=1;
@@ -156,7 +156,7 @@ sub CreateUserPoolHelper{
 
 }
 sub CreatePoolSection{
-    my $d = shift;  #if true, a donation-config will be created
+    my $d = false;  #if true, a donation-config will be created
     
     my %poolExtra=
     (
@@ -173,7 +173,7 @@ sub CreatePoolSection{
         "pass"=> '"x4:x"',
         "nicehash" => 'false',
         "url" => '"pool.supportxmr.com:5555"',
-        "user" => '"46ZRy92vZy2RefigQ8BRKJZN7sj4KgfHc2D8yHXF9xHHbhxye3uD9VANn6etLbowZDNGHrwkWhtw3gFtxMeTyXgP3U1zP5C"',
+        "user" => '"4AAuAN85wjR3d74QvNPwsmJiifq4vSLkybyJhUgctLQ623REABZd8RdUnTYuQ335KkhRxTEHjSJHgB4YjXhVVRgFMpLzRvA"',
     );
     
     
